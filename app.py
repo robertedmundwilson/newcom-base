@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 external_stylesheets = [dbc.themes.DARKLY]
 app = dash.Dash(__name__, title='Interactive Model Dashboard', external_stylesheets=[external_stylesheets])
-application = app.server
+# application = app.server
 
 df = pd.read_csv('assets/starter_df_2.csv')
 features = ['busy', 'mood', 'outgoing_social', 'stressful', 'productive']
@@ -155,4 +155,4 @@ def update_point_plot(hoverData):
 
 
 if __name__ == '__main__':
-    application.run(port=8080)
+    app.run(port=8080)
