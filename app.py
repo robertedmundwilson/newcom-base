@@ -155,4 +155,4 @@ def update_point_plot(hoverData):
 
 
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run_server(debug=False)
